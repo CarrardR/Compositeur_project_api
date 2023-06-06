@@ -55,7 +55,6 @@ a{
   display: flex;
   flex-direction: column;
   margin: 5pt;
-  margin-top: 211px;
   font-size: 14pt;
 }
 
@@ -74,4 +73,7 @@ a{
   border: 1px solid black;
   margin: 0px;
   padding: 5pt;
+}
+#image{
+  width: 200px;
 }

@@ -66,3 +66,10 @@ a{
 #resultat>div{
   margin-top: 0.5cm;
 }
+
+.liste{
+  background-color: white;
+}
+.liste>p{
+  border: 1px solid black;
+}

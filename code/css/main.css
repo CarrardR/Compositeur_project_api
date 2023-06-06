@@ -24,7 +24,6 @@ body {
   justify-content: center;
 }
 .comp {
-  text-align: center;
   font-size: 14pt;
   background-color: white;
   padding: 5pt;
@@ -35,6 +34,7 @@ body {
   border-radius: 5pt;
 }
 .nomComp {
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
 }

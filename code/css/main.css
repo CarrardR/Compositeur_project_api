@@ -43,12 +43,12 @@ body {
 a{
   text-decoration: none;
 }
-.labels {
+#labels {
   display: flex;
   flex-direction: column;
   text-align: right;
 }
-.resultat{
+#resultat{
   display: flex;
   flex-direction: column;
 }

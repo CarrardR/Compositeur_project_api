@@ -56,3 +56,11 @@ a{
   margin: 5pt;
   margin-top: 211px;
 }
+
+#labels>label{
+  margin-top: 0.5cm;
+}
+
+#resultat>div{
+  margin-top: 0.5cm;
+}

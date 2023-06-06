@@ -52,6 +52,6 @@ a{
 #resultat{
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
   margin: 5pt;
+  margin-top: 200px;
 }

@@ -13,7 +13,7 @@ class CompoSpecifiqueCtrl {
       http.chercherCompoSpecifique(compositeur, (data) => {
         let s = "<div>" + data.composer.birth + "</div><div>" + data.composer.death + "</div><div>" + data.composer.epoch + "</div>"
         $("#resultat").append(s);
-        $("#image").append(data.composer.portrait);
+        $("#image").append("<img src='" + data.composer.portrait + "'>");
         $("#titre").append(data.composer.complete_name);
       })
     }

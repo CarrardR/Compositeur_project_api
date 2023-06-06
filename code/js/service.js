@@ -46,7 +46,7 @@ class Service {
   }
 
   chercherCompoSpecifique(compositeur, successCallback) {
-    let url = "https://api.openopus.org/dyn/work/list/composer/" + compositeur.id + "/genre/all.json";
+    let url = "https://api.openopus.org/dyn/work/list/composer/" + compositeur + "/genre/all.json";
     // envoi de la requête
     $.ajax(url, {
       type: "GET",

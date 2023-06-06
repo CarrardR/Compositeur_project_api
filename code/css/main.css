@@ -20,5 +20,8 @@ body {
 
 #compositeurs{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+.comp{
 }

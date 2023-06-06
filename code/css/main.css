@@ -51,6 +51,7 @@ a{
   margin: 5pt;
   font-size: 14pt;
   width: 170px;
+  position: fixed;
 }
 #resultat{
   display: flex;

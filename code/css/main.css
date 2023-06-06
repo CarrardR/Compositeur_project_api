@@ -22,6 +22,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: white;
+  padding: 5pt;
+  border-radius: 2pt;
 }
 .comp{
+  text-align: center;
+  font-size: 14pt;
 }

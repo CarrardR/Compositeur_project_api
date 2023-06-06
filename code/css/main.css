@@ -29,6 +29,7 @@ body {
   background-color: white;
   padding: 5pt;
   border-radius: 5pt;
+  margin: 0.5cm;
 }
 .comp>img{
   border-radius: 5pt;

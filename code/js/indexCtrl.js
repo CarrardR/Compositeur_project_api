@@ -26,7 +26,7 @@ class IndexCtrl {
   }
 
   // avec function classique
-  loadCompoSpecifique() {
-    http.chargerVue("compoSpecifique", () => new CompoSpecifiqueCtrl());
+  loadCompoSpecifique(compositeur) {
+    http.chargerVue("compoSpecifique", () => new CompoSpecifiqueCtrl(compositeur));
   }
 }

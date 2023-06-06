@@ -45,6 +45,16 @@ class Service {
     });
   }
 
+  chercherCompoSpecifique(compositeur, successCallback) {
+    let url = "https://api.openopus.org/dyn/work/list/composer/" + compositeur.id + "/genre/all.json";
+    // envoi de la requête
+    $.ajax(url, {
+      type: "GET",
+      contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+      success: successCallback
+    });
+  }
+
   chargerVue(vue, callback) {
 
     // charger la vue demandee

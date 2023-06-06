@@ -12,7 +12,7 @@ class CompositeursCtrl {
   afficherCompositeurs() {
     http.chercherTousCompo((data) => {
       for (const compositeur in data.composers) {
-        let s = "<div class='comp'><img src='" + compositeur.portrait + "'><div class='nomComp'>" + compositeur.complete_name + "</div></div>";
+        let s = "<div class='comp'><img src='" + composers[compositeur].portrait + "'><div class='nomComp'>" + compositeur.complete_name + "</div></div>";
       $("#compositeurs").append(s);
       }
       })

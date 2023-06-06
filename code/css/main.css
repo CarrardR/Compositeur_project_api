@@ -34,7 +34,7 @@ body {
 .comp > img {
   border-radius: 5pt;
 }
-.nomComp {
+.nomComp>p {
   text-align: center;
   display: flex;
   flex-wrap: wrap;

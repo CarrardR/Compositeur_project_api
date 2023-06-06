@@ -49,12 +49,14 @@ a{
   flex-direction: column;
   text-align: right;
   margin: 5pt;
+  font-size: 14pt;
 }
 #resultat{
   display: flex;
   flex-direction: column;
   margin: 5pt;
   margin-top: 211px;
+  font-size: 14pt;
 }
 
 #labels>label{

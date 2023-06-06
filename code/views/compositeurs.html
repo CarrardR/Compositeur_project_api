@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!-- panneau de login -->
+<div>
+  <div class="titre">
+    Liste des compositeurs
+  </div>
+  <div class="contenu">
+    <div class="filtre">
+      Liste des filtres
+      <form>
+        <fieldset> 
+          <div class="field">
+            <input type="checkbox" id="romantique">
+            <label>Romantique</label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div id="compositeurs">&nbsp;
+    </div>
+  </div>
+
+    <div class="field">
+      <label for="domaine">Domaine</label>
+      <select id="domaine" class="form-control">
+        <option>EDU</option>
+        <option>STUDENTFR</option>
+      </select>
+    </div>
+    <input id="login-valider" type="button" class="but-valider" value="Valider" />
+    <!-- L'écouteur du bouton a été ajouté depuis le JavaScript -->
+    <!-- <input  id="valider-user" type="button" class="but-valider" value="Valider" onclick="loginCtrl.validerUtilisateur();"> -->
+    <a id="creer" href="javascript:indexCtrl.loadCompte();">Créer un compte</a>
+</div>

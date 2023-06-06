@@ -14,7 +14,8 @@ class CompoSpecifiqueCtrl {
         let s = "<div>" + data.composer.birth + "</div><div>";
         if (data.composer.death != null) {
           s += data.composer.death + "</div><div>";
-          $("#estMort").append("Date de mort:");
+        }else{
+          s += "Encore en vie</div><div>";
         }
         s+= data.composer.epoch + "</div><div class='liste'>"
         for (const morceau in data.works) {

@@ -8,22 +8,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.titre{
+.titre {
   font-size: 24pt;
   text-align: center;
 }
 
-.contenu{
+.contenu {
   display: flex;
   align-items: flex-start;
 }
 
-#compositeurs{
+#compositeurs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.comp{
+.comp {
   text-align: center;
   font-size: 14pt;
   background-color: white;
@@ -31,6 +31,10 @@ body {
   border-radius: 5pt;
   margin: 0.5cm;
 }
-.comp>img{
+.comp > img {
   border-radius: 5pt;
+}
+.nomComp {
+  display: flex;
+  flex-wrap: wrap;
 }

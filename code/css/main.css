@@ -47,6 +47,7 @@ a{
   display: flex;
   flex-direction: column;
   text-align: right;
+  margin: 5pt;
 }
 #resultat{
   display: flex;

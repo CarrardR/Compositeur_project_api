@@ -119,7 +119,7 @@ form{
   width: 80%;
 }
 
-#viewReduite{
+.viewReduite{
   border: 1pt solid black;
   padding: 5pt;
   width: 40%;

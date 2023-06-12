@@ -23,7 +23,6 @@ class CompoSpecifiqueCtrl {
         }
         s += "</div>";
         $("#resultatCompo").append(s);
-
         $("#titre").append(data.composer.complete_name);
       })
     }

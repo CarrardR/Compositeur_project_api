@@ -23,7 +23,7 @@ class CompoSpecifiqueCtrl {
         }
         s += "</div>";
         $("#resultatCompo").append(s);
-        $("#image").append("<img src='" + data.composer.portrait + "'>");
+
         $("#titre").append(data.composer.complete_name);
       })
     }

@@ -11,8 +11,9 @@ class MorceauCtrl {
 
     afficherMorceau(morceau){
       http.chercherMorceau(morceau, (data) => {
+        let s = "";
         for (const work in data.works) {
-          let s = "<div>" + data.works[work].genre + "</div><div>";
+          s += "<div>" + data.works[work].genre + "</div><div>";
           if (data.works[work].popular = 1) {
             s += "Populaire</div><div>"
           }else{

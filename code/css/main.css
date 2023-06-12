@@ -104,11 +104,10 @@ form{
 }
 
 #view{
-  width: 80%;
+  width: max-content;
 }
 
 #viewReduite{
   border: 1pt solid black;
-  width: 20%;
   padding: 5pt;
 }

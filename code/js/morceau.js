@@ -11,14 +11,22 @@ class MorceauCtrl {
 
     afficherMorceau(morceau){
       http.chercherMorceau(morceau, (data) => {
-        //let s = "<div>" + data.work.genre + "</div><div>";
         for (const work in data.works) {
-          data.works[work].composer.id;
+          let s = "<div>" + data.works[work].genre + "</div><div>";
+          if (data.works[work].popular = 1) {
+            s += "Populaire</div><div>"
+          }else{
+            s += "Pas très populaire</div><div>"
+          }
+          if (data.works[work].recommanded = 1) {
+            s += "Recommandé</div><div>"
+          }else{
+            s += "Pas forcément recommandé</div><div>"
+          }
+          s += data.works[work].composer.name + "</div>";
         }
-        s += data.work.death + "</div>";
         $("#resultat").append(s);
-        $("#image").append("<img src='" + data.composer.portrait + "'>");
-        $("#titre").append(data.composer.complete_name);
+        $("#titre").append(data.works[work].title);
       })
     }
 }

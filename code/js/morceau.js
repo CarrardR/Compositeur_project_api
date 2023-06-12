@@ -17,12 +17,12 @@ class MorceauCtrl {
           if (data.works[work].popular == 1) {
             s += "Populaire</div><div>"
           }else{
-            s += "Pas très populaire</div><div>"
+            s += "Pas populaire</div><div>"
           }
           if (data.works[work].recommanded == 1) {
             s += "Recommandé</div><div>"
           }else{
-            s += "Pas forcément recommandé</div><div>"
+            s += "Pas recommandé</div><div>"
           }
           s += data.works[work].composer.complete_name + "</div>";
           $("#titre").append(data.works[work].title);

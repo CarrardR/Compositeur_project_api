@@ -9,20 +9,19 @@ $().ready(function () {
   http = new Service();
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
-
+  $("form").on("click", loadCompositeur($("input[type=radio][name=filtre]:checked").attr("id")));
 });
 
 class IndexCtrl {
   constructor() {
-    this.loadCompositeur();
+    this.loadCompositeur("all");
   }
 
   afficherErreurHttp(msg) {
     alert(msg);
   }
 
-  loadCompositeur() {
-    let epoque = $("input[type=radio][name=filtre]:checked").attr("id");
+  loadCompositeur(epoque) {
     http.chargerVue("compositeurs", () =>  new CompositeursCtrl(epoque));
   }
 

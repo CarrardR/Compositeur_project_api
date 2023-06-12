@@ -56,7 +56,7 @@ class Service {
   }
 
   chercherMorceau(morceau, successCallback) {
-    let url = "/work/detail/" + morceau + ".json";
+    let url = "https://api.openopus.org/dyn/work/list/ids/" + morceau + ".json";
     // envoi de la requête
     $.ajax(url, {
       type: "GET",

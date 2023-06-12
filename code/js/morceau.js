@@ -11,7 +11,7 @@ class MorceauCtrl {
 
     afficherMorceau(morceau){
       http.chercherMorceau(morceau, (data) => {
-        let s = "<div>" + data.work.genre + "</div><div>";
+        //let s = "<div>" + data.work.genre + "</div><div>";
         if (data.works.composer) {
           
         }

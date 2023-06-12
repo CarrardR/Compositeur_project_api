@@ -23,6 +23,7 @@ class IndexCtrl {
 
   loadCompositeur(epoque) {
     http.chargerVue("compositeurs", () =>  new CompositeursCtrl(epoque));
+    $("#" + epoque).attr(checked, "checked");
   }
 
   loadCompoSpecifique(compositeur) {

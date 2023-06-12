@@ -89,6 +89,10 @@ form{
   background-color: white;
 }
 
+.filtre{
+  width: 5cm;
+}
+
 .field{
   padding-top: 5pt;
   padding-bottom: 5pt;

@@ -53,12 +53,21 @@ a{
   font-size: 14pt;
   position: absolute;
 }
-#resultat{
+#resultatMorceau{
   display: flex;
   flex-direction: column;
   margin: 5pt;
   font-size: 14pt;
-  width: 100%;
+  width: 147px;
+  margin-right: 0.5cm;
+  margin-left: 135.33333333333333333334px;
+}
+
+#resultatCompo{
+  display: flex;
+  flex-direction: column;
+  margin: 5pt;
+  font-size: 14pt;
   margin-right: 0.5cm;
   margin-left: 183.33333333333333333334px;
 }

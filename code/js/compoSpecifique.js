@@ -22,7 +22,7 @@ class CompoSpecifiqueCtrl {
           s += "<a href='javascript:indexCtrl.loadMorceau(" + data.works[morceau].id + ")'><p>" + data.works[morceau].title + "</p></a>";
         }
         s += "</div>";
-        $("#resultat").append(s);
+        $("#resultatCompo").append(s);
         $("#image").append("<img src='" + data.composer.portrait + "'>");
         $("#titre").append(data.composer.complete_name);
       })

@@ -27,7 +27,7 @@ class MorceauCtrl {
           s += data.works[work].composer.complete_name + "</div>";
           $("#titre").append(data.works[work].title);
         }
-        $("#resultat").append(s);
+        $("#resultatMorceau").append(s);
       })
     }
 }

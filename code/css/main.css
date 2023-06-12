@@ -83,3 +83,8 @@ a{
 #image{
   width: 200px;
 }
+
+form{
+  width: 5cm;
+  background-color: white;
+}

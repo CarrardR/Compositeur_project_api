@@ -77,4 +77,17 @@ class Service {
 
     });
   }
+
+  chargerVue2(vue, callback) {
+
+    // charger la vue demandee
+    $("#viewReduite").load("views/" + vue + ".html", function () {
+
+      // si une fonction de callback est spécifiée, on l'appelle ici
+      if (typeof callback !== "undefined") {
+        callback();
+      }
+
+    });
+  }
 }

@@ -26,10 +26,10 @@ class IndexCtrl {
   }
 
   loadCompoSpecifique(compositeur) {
-    http.chargerVue("compoSpecifique", () => new CompoSpecifiqueCtrl(compositeur));
+    http.chargerVue2("compoSpecifique", () => new CompoSpecifiqueCtrl(compositeur));
   }
 
   loadMorceau(morceau) {
-    http.chargerVue("morceau", () => new MorceauCtrl(morceau));
+    http.chargerVue2("morceau", () => new MorceauCtrl(morceau));
   }
 }

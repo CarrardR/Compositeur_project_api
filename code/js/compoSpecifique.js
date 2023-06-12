@@ -11,7 +11,7 @@ class CompoSpecifiqueCtrl {
 
     afficherComposer(compositeur){
       http.chercherCompoSpecifique(compositeur, (data) => {
-        let s = "<a href='javascript:indexCtrl.loadMorceau(" + data.works[compositeur].id + ")'><div>" + data.composer.birth + "</div><div>";
+        let s = "<div>" + data.composer.birth + "</div><div>";
         if (data.composer.death != null) {
           s += data.composer.death + "</div><div>";
         }else{
@@ -19,9 +19,9 @@ class CompoSpecifiqueCtrl {
         }
         s+= data.composer.epoch + "</div><div class='liste'>"
         for (const morceau in data.works) {
-          s += "<p>" + data.works[morceau].title + "</p>";
+          s += "<a href='javascript:indexCtrl.loadMorceau(" + data.works[morceau].id + ")'><p>" + data.works[morceau].title + "</p></a>";
         }
-        s += "</div></a>";
+        s += "</div>";
         $("#resultat").append(s);
         $("#image").append("<img src='" + data.composer.portrait + "'>");
         $("#titre").append(data.composer.complete_name);

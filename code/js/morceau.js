@@ -12,8 +12,8 @@ class MorceauCtrl {
     afficherMorceau(morceau){
       http.chercherMorceau(morceau, (data) => {
         //let s = "<div>" + data.work.genre + "</div><div>";
-        if (data.works.composer) {
-          
+        for (const work in data.works) {
+          data.works[work].composer.id;
         }
         s += data.work.death + "</div>";
         $("#resultat").append(s);

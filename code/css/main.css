@@ -119,3 +119,9 @@ form{
   padding: 5pt;
   width: 40%;
 }
+header > img{
+  height: 2cm;
+}
+header{
+  display: flex;
+}

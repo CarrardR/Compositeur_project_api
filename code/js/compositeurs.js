@@ -10,11 +10,18 @@ class CompositeursCtrl {
   }
 
   afficherCompositeurs(epoque) {
-    http.chercherTousCompo(epoque,(data) => {
+    http.chercherTousCompo(epoque, (data) => {
       for (const compositeur in data.composers) {
-        let s = "<a href='javascript:indexCtrl.loadCompoSpecifique(" + data.composers[compositeur].id +");'><div class='comp'><img src='" + data.composers[compositeur].portrait + "'><div class='nomComp'><p>" + data.composers[compositeur].complete_name + "</p></div></div></a>";
-      $("#compositeurs").append(s);
+        let s =
+          "<a href='javascript:indexCtrl.loadCompoSpecifique(" +
+          data.composers[compositeur].id +
+          ");'><div class='flip-card'><div class='flip-card-inner'><div class='flip-card-front>'<img src='" +
+          data.composers[compositeur].portrait +
+          "'><div class='nomComp'><p>" +
+          data.composers[compositeur].complete_name +
+          "</p></div></div><div class='flip-card-back'><div class='nomComp'>" + data.composers[compositeur].complete_name + "</div></div></div></div></a>";
+        $("#compositeurs").append(s);
       }
-      })
+    });
   }
 }

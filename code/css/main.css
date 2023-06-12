@@ -88,3 +88,8 @@ form{
   width: 5cm;
   background-color: white;
 }
+
+#field{
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+}

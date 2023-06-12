@@ -25,14 +25,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-.comp {
-  text-align: center;
-  font-size: 14pt;
-  background-color: white;
-  padding: 5pt;
-  border-radius: 5pt;
-  margin: 0.5cm;
-}
+
 .comp > img {
   border-radius: 5pt;
 }

@@ -9,22 +9,16 @@ class MorceauCtrl {
       this.afficherMorceau(morceau);
     }
 
-    afficherMorceau(morceau){/*
+    afficherMorceau(morceau){
       http.chercherMorceau(morceau, (data) => {
-        let s = "<div>" + data.composer.birth + "</div><div>";
-        if (data.composer.death != null) {
-          s += data.composer.death + "</div><div>";
-        }else{
-          s += "Encore en vie</div><div>";
+        let s = "<div>" + data.work.genre + "</div><div>";
+        if (data.works.composer) {
+          
         }
-        s+= data.composer.epoch + "</div><div class='liste'>"
-        for (const morceau in data.works) {
-          s += "<p>" + data.works[morceau].title + "</p>";
-        }
-        s += "</div>";
+        s += data.work.death + "</div>";
         $("#resultat").append(s);
         $("#image").append("<img src='" + data.composer.portrait + "'>");
         $("#titre").append(data.composer.complete_name);
-      })*/
+      })
     }
 }

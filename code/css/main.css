@@ -128,7 +128,7 @@ header{
   margin: 10pt;
 }
 
-#toogler, #container label{
+#toogler, #labelToogler{
   display: none;
 }
 
@@ -138,7 +138,7 @@ header{
     max-height: 0;
     overflow: hidden;
   }
-  #container label{
+  #labelToogler{
     display: inline-flex;
     align-items: center;
     cursor: pointer;

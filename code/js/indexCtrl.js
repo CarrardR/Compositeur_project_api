@@ -10,7 +10,7 @@ $().ready(function () {
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
   
-  $(".field").on("click", loadCompositeur($("input[type=radio][name=filtre]:checked").attr("id")));
+  $(".field>input").on("checked", loadCompositeur($("input[type=radio][name=filtre]:checked").attr("id")));
 });
 
 class IndexCtrl {

@@ -10,9 +10,6 @@ $().ready(function () {
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
   
-  $("input").on("click", function () {
-    http.chargerVue("compositeurs", () =>  new CompositeursCtrl(loadCompositeur($("input[type=radio][name=filtre]:checked").attr("id"))));
-  });
 });
 
 class IndexCtrl {
@@ -26,7 +23,7 @@ class IndexCtrl {
 
   loadCompositeur(epoque) {
     http.chargerVue("compositeurs", () =>  new CompositeursCtrl(epoque));
-    //$("#" + epoque).attr(checked, "checked");
+    $("#" + epoque).attr(checked, "checked");
   }
 
   loadCompoSpecifique(compositeur) {

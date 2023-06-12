@@ -24,7 +24,7 @@ class MorceauCtrl {
           }else{
             s += "Pas forcément recommandé</div><div>"
           }
-          s += data.works[work].composer.name + "</div>";
+          s += data.works[work].composer.complete_name + "</div>";
           $("#titre").append(data.works[work].title);
         }
         $("#resultat").append(s);

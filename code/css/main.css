@@ -76,7 +76,10 @@ a{
   margin-top: 0.5cm;
 }
 
-#resultat>div{
+#resultatCompo>div{
+  margin-top: 0.5cm;
+}
+#resultatMorceau>div{
   margin-top: 0.5cm;
 }
 

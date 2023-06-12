@@ -9,6 +9,7 @@ $().ready(function () {
   http = new Service();
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
+
 });
 
 class IndexCtrl {
@@ -21,7 +22,8 @@ class IndexCtrl {
   }
 
   loadCompositeur() {
-    http.chargerVue("compositeurs", () =>  new CompositeursCtrl());
+    let epoque = $("input[type=radio][name=filtre]:checked").val();
+    http.chargerVue("compositeurs", () =>  new CompositeursCtrl(epoque));
   }
 
   loadCompoSpecifique(compositeur) {

@@ -5,12 +5,12 @@
 */
 
 class CompositeursCtrl {
-  constructor() {
-    this.afficherCompositeurs();
+  constructor(epoque) {
+    this.afficherCompositeurs(epoque);
   }
 
-  afficherCompositeurs() {
-    http.chercherTousCompo((data) => {
+  afficherCompositeurs(epoque) {
+    http.chercherTousCompo(epoque,(data) => {
       for (const compositeur in data.composers) {
         let s = "<a href='javascript:indexCtrl.loadCompoSpecifique(" + data.composers[compositeur].id +");'><div class='comp'><img src='" + data.composers[compositeur].portrait + "'><div class='nomComp'><p>" + data.composers[compositeur].complete_name + "</p></div></div></a>";
       $("#compositeurs").append(s);

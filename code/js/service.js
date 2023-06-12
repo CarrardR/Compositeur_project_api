@@ -35,8 +35,8 @@ class Service {
 
   /*
   */
-  chercherTousCompo(successCallback) {
-    let url = "https://api.openopus.org/dyn/composer/list.phtml";
+  chercherTousCompo(epoque, successCallback) {
+    let url = "https://api.openopus.org/dyn/composer/list/epoch/" + epoque + ".json";
     // envoi de la requête
     $.ajax(url, {
       type: "GET",

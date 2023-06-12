@@ -14,12 +14,12 @@ class MorceauCtrl {
         let s = "";
         for (const work in data.works) {
           s += "<div>" + data.works[work].genre + "</div><div>";
-          if (data.works[work].popular = 1) {
+          if (data.works[work].popular == 1) {
             s += "Populaire</div><div>"
           }else{
             s += "Pas très populaire</div><div>"
           }
-          if (data.works[work].recommanded = 1) {
+          if (data.works[work].recommanded == 1) {
             s += "Recommandé</div><div>"
           }else{
             s += "Pas forcément recommandé</div><div>"

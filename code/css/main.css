@@ -148,7 +148,6 @@ header{
 }
 
 .flip-card-front, .flip-card-back{
-  position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
@@ -158,6 +157,12 @@ header{
 .flip-card-front{
   background-color: white;
   color: black;
+}
+
+.flip-card-back{
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
 }
 
 #toogler, #labelToogler{

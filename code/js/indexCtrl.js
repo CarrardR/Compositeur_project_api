@@ -22,7 +22,7 @@ class IndexCtrl {
   }
 
   loadCompositeur() {
-    let epoque = $("input[type=radio][name=filtre]:checked").val();
+    let epoque = $("input[type=radio][name=filtre]:checked").attr("id");
     http.chargerVue("compositeurs", () =>  new CompositeursCtrl(epoque));
   }
 

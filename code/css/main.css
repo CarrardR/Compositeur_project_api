@@ -125,8 +125,6 @@ header{
   background-color: transparent;
   perspective: 1000px;
   border: 1px solid #f1f1f1;
-  background-color: white;
-  color: black;
 }
 
 .flip-card-inner {
@@ -147,6 +145,11 @@ header{
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.flip-card-front{
+  background-color: white;
+  color: black;
 }
 
 .flip-card-back{

@@ -12,7 +12,6 @@ class MorceauCtrl {
     afficherMorceau(morceau){
       http.chercherMorceau(morceau, (data) => {
         let s = "<div>" + data.work.genre + "</div><div>";
-        console.log("jdasjgf");
         if (data.works.composer) {
           
         }

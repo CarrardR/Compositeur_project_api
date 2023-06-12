@@ -15,7 +15,7 @@ class CompositeursCtrl {
         let s =
           "<a href='javascript:indexCtrl.loadCompoSpecifique(" +
           data.composers[compositeur].id +
-          ");'><div class='flip-card'><div class='flip-card-inner'><div class='flip-card-front>'<img src='" +
+          ");'><div class='flip-card'><div class='flip-card-inner'><div class='flip-card-front'><img src='" +
           data.composers[compositeur].portrait +
           "'><div class='nomComp'><p>" +
           data.composers[compositeur].complete_name +

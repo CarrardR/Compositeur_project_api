@@ -20,13 +20,15 @@ class IndexCtrl {
     alert(msg);
   }
 
-  // avec arrow function
   loadCompositeur() {
     http.chargerVue("compositeurs", () =>  new CompositeursCtrl());
   }
 
-  // avec function classique
   loadCompoSpecifique(compositeur) {
     http.chargerVue("compoSpecifique", () => new CompoSpecifiqueCtrl(compositeur));
+  }
+
+  loadMorceau(morceau) {
+    http.chargerVue("morceau", () => new MorceauCtrl(morceau));
   }
 }

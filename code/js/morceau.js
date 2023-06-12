@@ -4,14 +4,14 @@
   Date :   05.06.2023 / V1.0
 */
 
-class CompoSpecifiqueCtrl {
-    constructor(compositeur) {
-      this.afficherComposer(compositeur);
+class MorceauCtrl {
+    constructor(morceau) {
+      this.afficherMorceau(morceau);
     }
 
-    afficherComposer(compositeur){
-      http.chercherCompoSpecifique(compositeur, (data) => {
-        let s = "<a href='javascript:indexCtrl.loadMorceau(" + data.works[compositeur].id + ")'><div>" + data.composer.birth + "</div><div>";
+    afficherMorceau(morceau){
+      http.chercherMorceau(morceau, (data) => {
+        let s = "<a href='javascript:indexCtrl.loadCompoSpecifique()'><div>" + data.composer.birth + "</div><div>";
         if (data.composer.death != null) {
           s += data.composer.death + "</div><div>";
         }else{

@@ -91,7 +91,6 @@ form{
 
 .filtre{
   width: 5cm;
-  margin: 0px;
 }
 
 .field{
@@ -99,11 +98,7 @@ form{
   padding-bottom: 5pt;
 }
 
-.container{
+#container{
   display: flex;
   flex-wrap: wrap;
-}
-
-#view{
-  width: 80%;
 }

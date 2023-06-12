@@ -10,7 +10,9 @@ $().ready(function () {
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
   
-  $(".field input").on("checked", loadCompositeur(""));
+  $(".field input").on("checked", function () {
+    http.chargerVue("compositeurs", () =>  new CompositeursCtrl(loadCompositeur($("input[type=radio][name=filtre]:checked").attr("id"))));
+  });
 });
 
 class IndexCtrl {

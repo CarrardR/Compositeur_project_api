@@ -102,3 +102,7 @@ form{
   display: flex;
   flex-wrap: wrap;
 }
+
+#view{
+  width: 80%;
+}

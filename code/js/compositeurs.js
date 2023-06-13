@@ -25,7 +25,7 @@ class CompositeursCtrl {
       $(".flip-card").hover(function () {
         let cmp = new BackCompospecifiqueCtrl($(this).find(".flip-card-inner .flip-card-front p").val());
         console.log("done");
-      }
+      }, function () {}
     );
     });
   }

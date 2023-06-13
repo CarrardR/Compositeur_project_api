@@ -30,18 +30,18 @@ class BackCompospecifiqueCtrl {
   constructor(compositeur) {
     this.versoCarte(compositeur);
   }
-  
+
   versoCarte(compositeur) {
     http.chercherCompoSpecifique(compositeur, (data) => {
       let s = "";
-      s += "<p>Date de naissance: " + data.composer.birth + "</p><p>";
+      s += "<div class='flip-card-back'><p>Naissance: " + data.composer.birth + "</p><p>Mort: ";
       if (data.composer.death != null) {
-        s += data.composer.death + "</p><p>";
+        s += data.composer.death + "</p><p>Epoque: ";
       } else {
-        s += "Encore en vie</p><p>";
+        s += "Encore en vie</p><p>Epoque: ";
       }
-      s += data.composer.epoch + "</p>";
-      $(".flip-card-back").append(s);
+      s += data.composer.epoch + "</p></div></div></div></a>";
+      $(".flip-card-back").replaceWith(s);
     });
   }
 }

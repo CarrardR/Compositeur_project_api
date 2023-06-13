@@ -23,8 +23,13 @@ class CompositeursCtrl {
         $("#compositeurs").append(s);
       }
       $(".flip-card").hover(function () {
-        let cmp = new BackCompospecifiqueCtrl($(this).find(".flip-card-inner .flip-card-front p").val());
-        console.log("done");
+        let val = "";
+        for (const compo in data.composers) {
+          if (data.composers[compo].complete_name === $(this).find(".flip-card-inner .flip-card-front p").text()) {
+            val = data.composers[compo].id;
+          }
+        }
+        let cmp = new BackCompospecifiqueCtrl(val);
       }, function () {}
     );
     });

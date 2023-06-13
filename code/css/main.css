@@ -12,8 +12,13 @@ body {
   font-size: 24pt;
   text-align: center;
   margin: 0.5cm;
-  padding-left: 40%;
 }
+ .titreGeneral{
+  font-size: 24pt;
+  text-align: center;
+  margin: 0.5cm;
+  padding-left: 35%;
+ }
 
 .contenu {
   display: flex;
@@ -39,6 +44,9 @@ a{
   text-decoration: none;
   color: black;
 }
+fieldset{
+  background-color: white;
+}
 #labels {
   display: flex;
   flex-direction: column;
@@ -60,11 +68,8 @@ a{
 #resultatCompo{
   display: flex;
   flex-direction: column;
-  margin: 5pt;
   font-size: 14pt;
   width: 100%;
-  margin-right: 0.5cm;
-  margin-left: 183.33333333333333333334px;
 }
 
 #labels>label{
@@ -78,13 +83,15 @@ a{
   margin-top: 0.5cm;
 }
 
-.liste{
-  background-color: white;
-}
 .liste p{
   border: 1px solid black;
-  margin: 0px;
+  background-color: white;
+  margin: 5pt;
+  border-radius: 5pt;
   padding: 5pt;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 200px;
 }
 #image{
   width: 200px;
@@ -92,7 +99,6 @@ a{
 
 form{
   width: 5cm;
-  background-color: white;
 }
 
 .filtre{
@@ -111,7 +117,8 @@ form{
 .viewReduite{
   border: 1pt solid black;
   padding: 5pt;
-  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 header > img{
   height: 2cm;
@@ -128,7 +135,7 @@ header{
 }
 
 .flip-card-inner {
-  position: relative;
+  display: grid;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -141,6 +148,7 @@ header{
 }
 
 .flip-card-front, .flip-card-back{
+  grid-area: 1/1;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
@@ -160,6 +168,6 @@ header{
 
 @media screen and (max-width: 725px){
   .filtre{
-    overflow: hidden;
+    display: none;
   }
 }

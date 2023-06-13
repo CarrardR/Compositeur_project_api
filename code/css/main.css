@@ -158,22 +158,8 @@ header{
   transform: rotateY(180deg);
 }
 
-#toogler, #labelToogler{
-  display: none;
-}
-
 @media screen and (max-width: 725px){
   .filtre{
-    width: 1cm;
-    max-height: 0;
     overflow: hidden;
-  }
-  #labelToogler{
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  #toogler:checked ~ .filtre{
-    max-height: 20cm;
   }
 }

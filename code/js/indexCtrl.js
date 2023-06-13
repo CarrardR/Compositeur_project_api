@@ -9,7 +9,10 @@ $().ready(function () {
   http = new Service();
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
-  
+  $(".flip-card-inner").hover(function () {
+      console.log("klsbdfkjh");      
+    }
+  );
 });
 
 class IndexCtrl {

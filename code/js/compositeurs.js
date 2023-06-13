@@ -19,7 +19,7 @@ class CompositeursCtrl {
           data.composers[compositeur].portrait +
           "'><div class='nomComp'><p>" +
           data.composers[compositeur].complete_name +
-          "</p></div></div><div class='flip-card-back'><div class='nomComp'>" + data.composers[compositeur].complete_name + "</div></div></div></div></a>";
+          "</p></div></div><div class='flip-card-back'><div>" + data.composers[compositeur].complete_name + "</div></div></div></div></a>";
         $("#compositeurs").append(s);
       }
     });

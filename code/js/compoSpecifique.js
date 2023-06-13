@@ -11,7 +11,7 @@ class CompoSpecifiqueCtrl {
 
     afficherComposer(compositeur){
       http.chercherCompoSpecifique(compositeur, (data) => {
-        let s = "<div>";
+        let s = "<div class='liste'>"
         for (const morceau in data.works) {
           s += "<a href='javascript:indexCtrl.loadMorceau(" + data.works[morceau].id + ")'><p>" + data.works[morceau].title + "</p></a>";
         }

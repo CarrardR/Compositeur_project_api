@@ -11,13 +11,7 @@ class CompoSpecifiqueCtrl {
 
     afficherComposer(compositeur){
       http.chercherCompoSpecifique(compositeur, (data) => {
-        let s = "<div>" + data.composer.birth + "</div><div>";
-        if (data.composer.death != null) {
-          s += data.composer.death + "</div><div>";
-        }else{
-          s += "Encore en vie</div><div>";
-        }
-        s+= data.composer.epoch + "</div><div class='liste'>"
+        let s = "<div>";
         for (const morceau in data.works) {
           s += "<a href='javascript:indexCtrl.loadMorceau(" + data.works[morceau].id + ")'><p>" + data.works[morceau].title + "</p></a>";
         }

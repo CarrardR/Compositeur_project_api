@@ -9,8 +9,10 @@ $().ready(function () {
   http = new Service();
   indexCtrl = new IndexCtrl();  // ctrl principal
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
-  $(".flip-card-inner").hover(function () {
+  $(".flip-card").hover(function () {
       console.log("klsbdfkjh");      
+    }, function () {
+      console.log("out");
     }
   );
 });

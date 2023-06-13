@@ -22,7 +22,7 @@ class CompositeursCtrl {
           "</p></div></div><div class='flip-card-back'><p>" + data.composers[compositeur].complete_name + "</p>";
           http.chercherCompoSpecifique(data.composers[compositeur].id, (data2) => {
             s += "<p>Date de naissance: " + data2.composer.birth + "</p><p>"
-            if (data.composer.death != null) {
+            if (data2.composer.death != null) {
               s += data2.composer.death + "</p><p>";
             }else{
               s += "Encore en vie</p><p>";

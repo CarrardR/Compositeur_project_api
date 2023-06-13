@@ -23,7 +23,7 @@ class CompositeursCtrl {
         $("#compositeurs").append(s);
       }
       $(".flip-card").hover(function () {
-        console.log($(this).children(".flip-car-inner .flip-card-front .nomComp p"));
+        console.log($(this).children().children().children().children().val());
       }
     );
     });

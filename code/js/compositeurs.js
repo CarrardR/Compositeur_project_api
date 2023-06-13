@@ -21,6 +21,12 @@ class CompositeursCtrl {
           data.composers[compositeur].complete_name +
           "</p></div></div><div class='flip-card-back'><p>" + data.composers[compositeur].complete_name + "</p></div></div></div></a>";
         $("#compositeurs").append(s);
+        $(".flip-card").hover(function () {
+          console.log("klsbdfkjh");      
+        }, function () {
+          console.log("out");
+        }
+      );
       }
     });
   }

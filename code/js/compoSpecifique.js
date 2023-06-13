@@ -7,7 +7,6 @@
 class CompoSpecifiqueCtrl {
   constructor(compositeur) {
     this.afficherComposer(compositeur);
-    this.versoCarte(compositeur);
   }
 
   afficherComposer(compositeur) {
@@ -26,7 +25,12 @@ class CompoSpecifiqueCtrl {
       $("#titre").append(data.composer.complete_name);
     });
   }
-
+}
+class BackCompospecifiqueCtrl {
+  constructor(compositeur) {
+    this.versoCarte(compositeur);
+  }
+  
   versoCarte(compositeur) {
     http.chercherCompoSpecifique(compositeur, (data) => {
       let s = "";

@@ -141,6 +141,7 @@ header{
 }
 
 .flip-card-front, .flip-card-back{
+  position: fixed;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;

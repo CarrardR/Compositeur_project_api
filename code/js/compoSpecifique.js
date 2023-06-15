@@ -1,7 +1,7 @@
 /*
-  But :     Page contenant un compositeurs détaillé
+  But :    Page contenant le détail du compositeur
   Auteur : Rémi Carrard
-  Date :   05.06.2023 / V1.0
+  Date :   15.06.2023 / V1.0
 */
 
 class CompoSpecifiqueCtrl {

@@ -1,15 +1,13 @@
 /*
-  But :     Controller pour le site web
+  But :    Controleur pour le site web
   Auteur : Rémi Carrard
-  Date :   05.06.2023 / V1.0
+  Date :   15.06.2023 / V1.0
 */
 
 $().ready(function () {
-  // service et indexCtrl sont des variables globales qui doivent être accessible depuis partout => pas de mot clé devant ou window.xxx
   http = new Service();
-  indexCtrl = new IndexCtrl();  // ctrl principal
+  indexCtrl = new IndexCtrl();
   http.centraliserErreurHttp(indexCtrl.afficherErreurHttp);
-  
 });
 
 class IndexCtrl {
@@ -22,7 +20,7 @@ class IndexCtrl {
   }
 
   loadCompositeur(epoque) {
-    http.chargerVue("compositeurs", () =>  new CompositeursCtrl(epoque));
+    http.chargerVue("compositeurs", () => new CompositeursCtrl(epoque));
   }
 
   loadCompoSpecifique(compositeur) {

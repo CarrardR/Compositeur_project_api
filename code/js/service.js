@@ -1,14 +1,11 @@
 /*
- * Couche de services HTTP (worker). 
- *
- * @author Jean-Claude Stritt / modif P-A Mettraux
- */
+  But :    Page contenant le worker qui fait les appels http vers l'API
+  Auteur : Rémi Carrard
+  Date :   15.06.2023 / V1.0
+*/
 class Service {
   constructor() {}
 
-  /*
-  **  $.ajaxSetup permet de définir une fois un élément sans le refaire par la suite. Ici cela se fait l'error
-  */
   centraliserErreurHttp(httpErrorCallbackFn) {
     $.ajaxSetup({
       error: function (xhr, exception) {
@@ -33,8 +30,6 @@ class Service {
     });
   }
 
-  /*
-  */
   chercherTousCompo(epoque, successCallback) {
     let url = "https://api.openopus.org/dyn/composer/list/epoch/" + epoque + ".json";
     // envoi de la requête
